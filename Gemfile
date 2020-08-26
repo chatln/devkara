@@ -27,6 +27,54 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
+
+######### PROJET GEM  ##########
+
+##### MEMBERSHIP #####
+gem 'devise', '~> 4.7', '>= 4.7.2'
+#gem 'devise_invitable', '~> 2.0', '>= 2.0.2'
+
+##### STYLES #####
+gem 'bootstrap', '~> 5.0.0.alpha1'
+gem "bootstrap_form", "~> 4.0"
+gem 'webpacker', '~> 4.0.0'
+gem 'tailwindcss', '~> 1.0', '>= 1.0.3'
+
+
+####### Js  #######
+gem 'jquery-rails'
+
+
+####### REAL TIME ######
+# Use Redis adapter to run Action Cable in production
+# gem 'redis', '~> 4.0'
+
+#AnyCable is a polyglot replacement for ActionCable-compatible servers
+#gem 'anycable', '~> 1.0', '>= 1.0.1'
+
+#Build reactive applications with the Rails tooling you already know and love.
+#gem 'stimulus_reflex', '~> 3.2', '>= 3.2.3'
+
+#CableReady completes the ActionCable story and expands the utility of web sockets in your Rails app
+#gem 'cable_ready', '~> 4.3'
+
+
+
+
+#### Media and Media Storage  ####
+
+# Use ActiveStorage variant
+# gem 'mini_magick', '~> 4.8'
+
+
+###### URLS BUILDER ######
+#gem 'friendly_id', '~> 5.4'
+
+
+
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -48,6 +96,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+
+  ##### erorrs message  ####
+  gem 'best_errors', '~> 0.1.4'
+  gem 'guard-livereload', '~> 2.5', '>= 2.5.2'
+  gem 'guard', '~> 2.16', '>= 2.16.1'
+
 end
 
 group :test do
