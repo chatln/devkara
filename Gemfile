@@ -63,7 +63,7 @@ gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 
 ###### EDIT  ########
-#gem 'summernote-rails', '~> 0.8.12.0'
+gem 'summernote-rails', '~> 0.8.12.0'
 
 
 
