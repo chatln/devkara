@@ -1,0 +1,19 @@
+<% @courses.each do |c| %>
+
+  <div class="mt-2">
+    <div class="card container border">
+
+      <!-- title/!-->
+      <h1 class="card-text no-underline mt-2">
+        <%= link_to  c, class: "text-lg font-semibold" do %>
+          <%= c.title %>
+        <% end %>
+      </h1>
+
+      <!-- content/!-->
+      <%= link_to course_path(c),  class: "card-text hover:no-underline hover:text-black" do %>
+        <%= c.content %>
+      <% end %>
+    </div>
+  </div>
+<% end %>
