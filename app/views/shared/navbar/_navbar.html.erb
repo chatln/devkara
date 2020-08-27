@@ -26,7 +26,7 @@
             <li class="nav-item active">
               <%= link_to edit_user_registration_path(@user), class: "m-links nav-link" do %>
                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-                 <%= current_user %>
+                 <%= current_user.username %>
               <% end %>
             </li>
 
@@ -46,6 +46,12 @@
             </li>
           </ul>
         </div>
+
+        <ul>
+          <li>
+            <%= link_to "Connexion", user_session_path, class:  "btn btn-primary" %>
+          </li>
+        </ul>
 
   </div>
 </nav>
