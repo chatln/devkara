@@ -36,6 +36,7 @@ gem 'devise', '~> 4.7', '>= 4.7.2'
 #gem 'devise_invitable', '~> 2.0', '>= 2.0.2'
 
 ##### STYLES #####
+
 gem 'bootstrap', '~> 5.0.0.alpha1'
 gem "bootstrap_form", "~> 4.0"
 gem 'webpacker', '~> 4.0.0'
@@ -43,7 +44,8 @@ gem 'tailwindcss', '~> 1.0', '>= 1.0.3'
 
 
 ####### Js  #######
-gem 'jquery-rails'
+gem 'jquery-rails', '~> 4.4'
+gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 
 ####### REAL TIME ######
@@ -69,7 +71,7 @@ gem 'jquery-rails'
 
 
 ###### URLS BUILDER ######
-#gem 'friendly_id', '~> 5.4'
+gem 'friendly_id', '~> 5.4'
 
 
 

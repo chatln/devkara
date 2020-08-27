@@ -1,4 +1,5 @@
 class CoursesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_course, only: [:show, :edit, :update, :destroy]
 
   # GET /courses
@@ -24,7 +25,8 @@ class CoursesController < ApplicationController
   # POST /courses
   # POST /courses.json
   def create
-    @course = Course.new(course_params)
+    @course = current_user.courses.build(course_params)
+
 
     respond_to do |format|
       if @course.save
@@ -64,7 +66,7 @@ class CoursesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_course
-      @course = Course.find(params[:id])
+      @course = Course.friendly.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
